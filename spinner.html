@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HBO Spinner</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"></link>
+  </head>
+
+  <body>
+    <div class="spinner"></div>
+  </body>
+
+  <style>
+    html, body {
+      height: 100vh;
+      background-color: #1b1919;
+    }
+  </style>
+
+  <style>
+    :root {
+      --radius: 8px;
+      --diameter: calc(2*var(--radius));
+
+      --outer_padding: 5px;
+    }
+
+    .spinner {
+      background-color: #1b1919;
+      position: relative;
+      height: calc(var(--diameter) + 2 * var(--outer_padding));
+    }
+
+    .spinner div {
+      display: inline-block;
+      position: absolute;
+      height: var(--diameter);
+      width: var(--diameter);
+      border-radius: var(--radius);
+      background-color: white;
+    }
+  </style>
+
+  <script type="module" src="/main.js"></script>
+
+</html> 
